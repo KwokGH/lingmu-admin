@@ -168,7 +168,15 @@ const routeMap: RouteMap = {
   "500": "/500",
   "home": "/home",
   "iframe-page": "/iframe-page/:url",
-  "login": "/login/:module(pwd-login|code-login|register|reset-pwd|bind-wechat)?"
+  "login": "/login/:module(pwd-login|code-login|register|reset-pwd|bind-wechat)?",
+  document: '/document',
+  document_project: '/document/project',
+  'document_project-link': '/document/project-link',
+  document_vue: '/document/vue',
+  document_vite: '/document/vite',
+  document_unocss: '/document/unocss',
+  document_naive: '/document/naive',
+  document_antd: '/document/antd'
 };
 
 /**

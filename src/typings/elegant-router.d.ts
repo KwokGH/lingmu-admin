@@ -23,6 +23,14 @@ declare module "@elegant-router/types" {
     "home": "/home";
     "iframe-page": "/iframe-page/:url";
     "login": "/login/:module(pwd-login|code-login|register|reset-pwd|bind-wechat)?";
+    "document": "/document";
+    "document_project": "/document/project";
+    "document_project-link": "/document/project-link";
+    "document_vue": "/document/vue";
+    "document_vite": "/document/vite";
+    "document_unocss": "/document/unocss";
+    "document_naive": "/document/naive";
+    "document_antd": "/document/antd";
   };
 
   /**
@@ -153,7 +161,7 @@ declare module "@elegant-router/types" {
         component: `view.${K}`;
       }
     : never;
-  
+
   /**
    * the center level route
    */
@@ -176,7 +184,7 @@ declare module "@elegant-router/types" {
         children: (CenterLevelRoute<GetChildRouteKey<K>> | LastLevelRoute<GetChildRouteKey<K>>)[];
       }
     : never;
-  
+
   /**
    * the custom first level route
    */
